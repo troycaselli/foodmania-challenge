@@ -45,7 +45,8 @@ while (!shouldExit)
 
     if (CheckIfFoodConsumed())
     {
-        Console.WriteLine("food is consumed!");
+        ChangePlayer();
+        ShowFood();
     }
 
     Move();
