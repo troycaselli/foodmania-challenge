@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vnr/NOAuIfql4YikFwCtSUqioMgZc0gCOQQMUU5/e5ys30BQf8Sl/yYFRCQ/JzFzFhwsDx7yRUb/eo1tmUGFpQ==",
+  "dgSpecHash": "K5LotZDhLJFt8qmz5oO2Jy/qDvpBu/xcLgDP1k9Lw+FpNqZhBu8zMN3h7dL2zawEeUAgRHCJjnsy15A8UxZTLA==",
   "success": true,
   "projectFilePath": "/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/Starter.csproj",
-  "expectedPackageFiles": [
-    "/Users/troycaselli/.nuget/packages/microsoft.netcore.app.ref/6.0.25/microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "/Users/troycaselli/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.25/microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "/Users/troycaselli/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.25/microsoft.netcore.app.host.osx-x64.6.0.25.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
