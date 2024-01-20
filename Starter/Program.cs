@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 
 Random random = new();
 Console.CursorVisible = false;
@@ -18,11 +20,17 @@ int foodY = 0;
 string[] states = { "('-')", "(^-^)", "(X_X)" };
 string[] foods = { "@@@@@", "$$$$$", "#####" };
 
-// Current player string displayed in the Console
+// Current player string and length
 string player = states[0];
+int playerLength = player.Length;
 
-// Index of the current food
+// Index, type, and length of the current food
 int food = 0;
+string currentFood = "";
+int foodLength = currentFood.Length;
+
+bool[] eatenFood = new bool[foodLength];
+
 
 InitializeGame();
 while (!shouldExit)
@@ -33,6 +41,11 @@ while (!shouldExit)
         Console.WriteLine("Console was resized. Program exiting.");
         shouldExit = true;
         break;
+    }
+
+    if (CheckIfFoodConsumed())
+    {
+        Console.WriteLine("food is consumed!");
     }
 
     Move();
@@ -58,7 +71,10 @@ void ShowFood()
 
     // Display the food at the location
     Console.SetCursorPosition(foodX, foodY);
-    Console.Write(foods[food]);
+    currentFood = foods[food];
+    foodLength = currentFood.Length;
+    eatenFood = new bool[foodLength];
+    Console.Write(currentFood);
 }
 
 // Changes the player to match the food consumed
@@ -74,6 +90,32 @@ void FreezePlayer()
 {
     System.Threading.Thread.Sleep(1000);
     player = states[0];
+}
+
+bool CheckIfFoodConsumed()
+{
+    // check if player and food are on same horizontal line
+    if (playerY == foodY)
+    {
+        // check if food and player overlap
+        if ((playerX + playerLength - 1 >= foodX) && (playerX <= foodX + foodLength - 1))
+        {
+            // determine the pieces of food eaten
+            for (int i = 0; i < foodLength; i++)
+            {
+                // check whether each piece of food is within the range of the player
+                if (foodX + i >= playerX && foodX + i <= playerX + playerLength - 1)
+                {
+                    eatenFood[i] = true;
+                }
+            }
+
+            // return whether every piece of food has been eaten
+            return !eatenFood.Any(value => value == false);
+        }
+    }
+
+    return false;
 }
 
 // Reads directional input from the Console and moves the player
