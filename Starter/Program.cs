@@ -46,6 +46,7 @@ while (!shouldExit)
     if (CheckIfFoodConsumed())
     {
         ChangePlayer();
+        FreezePlayer();
         ShowFood();
     }
 
@@ -89,8 +90,17 @@ void ChangePlayer()
 // Temporarily stops the player from moving
 void FreezePlayer()
 {
-    System.Threading.Thread.Sleep(1000);
-    player = states[0];
+    if (player == "(X_X)")
+    {
+        System.Threading.Thread.Sleep(1000);
+        player = states[0];
+    }
+}
+
+// Checks whether player is energetic
+bool AcceleratePlayer()
+{
+    return player == "(^-^)";
 }
 
 bool CheckIfFoodConsumed()
@@ -134,10 +144,16 @@ void Move()
             playerY++;
             break;
         case ConsoleKey.LeftArrow:
-            playerX--;
+            if (AcceleratePlayer())
+                playerX -= 3;
+            else
+                playerX--;
             break;
         case ConsoleKey.RightArrow:
-            playerX++;
+            if (AcceleratePlayer())
+                playerX += 3;
+            else
+                playerX++;
             break;
         case ConsoleKey.Escape:
             shouldExit = true;
