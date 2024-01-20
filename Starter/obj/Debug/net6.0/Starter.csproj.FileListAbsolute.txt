@@ -1,0 +1,15 @@
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/bin/Debug/net6.0/Starter
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/bin/Debug/net6.0/Starter.deps.json
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/bin/Debug/net6.0/Starter.runtimeconfig.json
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/bin/Debug/net6.0/Starter.dll
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/bin/Debug/net6.0/Starter.pdb
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.AssemblyInfoInputs.cache
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.AssemblyInfo.cs
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.csproj.CoreCompileInputs.cache
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.dll
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/refint/Starter.dll
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.pdb
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.genruntimeconfig.cache
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/ref/Starter.dll
+/Users/troycaselli/Downloads/Challenge-project-Create-methods-in-CSharp-main/Starter/obj/Debug/net6.0/Starter.csproj.AssemblyReference.cache
